@@ -1,0 +1,14 @@
+/* nav */
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--line);background:rgba(5,13,10,.7)}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Barlow Condensed';font-style:italic;font-weight:900;line-height:.95;font-size:18px}
+.logo b{color:var(--lime);display:block}
+.ball{width:34px;height:34px;flex:none}
+.links{display:flex;gap:34px;font-weight:500}
+.links a{padding:8px 0;border-bottom:2px solid transparent}
+.links a.on{color:var(--lime);border-color:var(--lime)}
+.login{border:1.5px solid var(--lime);color:var(--tx);border-radius:30px;padding:9px 28px;font-weight:600;background:none;font:inherit;font-weight:600;display:flex;gap:10px;align-items:center}
+.burger{display:none;width:24px;height:18px;border-top:3px solid var(--lime);border-bottom:3px solid var(--lime);position:relative}
+.burger::after{content:"";position:absolute;left:0;right:0;top:6px;border-top:3px solid var(--lime)}
+
+.logo .ball{object-fit:contain}
+nav{position:relative}.burger{background:none;border-left:0;border-right:0;padding:0;cursor:pointer}

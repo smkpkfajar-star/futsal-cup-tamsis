@@ -1,0 +1,7 @@
+/* faq */
+details{border:1px solid var(--line);border-radius:12px;background:var(--card2);padding:14px 16px;margin-bottom:10px;max-width:820px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--lime);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}details[open]{border-color:var(--lime)}
+details p{color:var(--mut);margin:10px 0 0;line-height:1.5}

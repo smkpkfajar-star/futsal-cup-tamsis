@@ -1,0 +1,6 @@
+/* stepper */
+.steps{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:14px;background:rgba(10,22,19,.85);padding:12px 22px;margin:8px 0 14px}
+.st{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--mut);white-space:nowrap}
+.st i{font-style:normal;width:34px;height:34px;border-radius:50%;border:1.5px solid #3a5448;display:grid;place-items:center;font-weight:700;color:var(--tx);background:var(--bg)}
+.st.on{color:var(--tx);font-weight:700}.st.on i{background:var(--lime);color:#06130c;border-color:var(--lime);box-shadow:0 0 14px rgba(166,255,0,.5)}
+.bar{flex:1;height:1px;background:#2b463a;min-width:20px}.bar.on{background:var(--lime)}

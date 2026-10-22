@@ -1,0 +1,46 @@
+/* layout */
+.grid{display:grid;grid-template-columns:1.05fr 1fr .62fr;gap:14px;align-items:start}
+.panel{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--card),#08120f);padding:16px}
+.ph{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.ico{width:36px;height:36px;border-radius:9px;background:var(--lime);color:#06130c;display:grid;place-items:center;flex:none}
+.ico.o{background:#0f2a20;border:1px solid var(--lime);color:var(--lime)}
+.ico svg{width:20px;height:20px}
+.ph h2{margin:0;font-size:18px;font-weight:700}.ph small{color:var(--mut);font-size:12px}
+.sec{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px;background:var(--card2)}
+.sec h3{margin:0 0 12px;font-size:14px;font-weight:700;display:flex;gap:10px;align-items:center}
+.sec h3 svg{width:22px;height:22px;color:var(--lime)}
+label{display:block;font-size:11px;font-weight:600;margin:0 0 4px}
+label s{color:#ff5a5a;text-decoration:none}
+input,select{width:100%;background:#0a1512;border:1px solid #28483b;border-radius:6px;color:var(--tx);padding:9px 10px;font:inherit;font-size:11.5px;outline:none}
+input::placeholder{color:#8aa096}
+input:focus,select:focus,button:focus-visible{border-color:var(--lime);box-shadow:0 0 0 2px rgba(166,255,0,.25)}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#cfd8d3 50%),linear-gradient(135deg,#cfd8d3 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+.f{margin-bottom:10px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.up{border:1.5px dashed #3c7a5a;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:3px;font-size:10.5px;color:var(--mut);cursor:pointer;background:#0a1512;padding:12px;min-height:80px}
+.up b{color:var(--tx);font-size:11px;font-weight:500}
+.up svg{width:24px;height:24px;color:var(--lime)}
+.logoRow{display:flex;gap:8px;align-items:flex-start}.logoRow .up{flex:1;min-height:80px}
+.prev{width:56px;text-align:center;font-size:9px;color:var(--mut)}
+.shield{width:56px;height:56px;display:block;margin-bottom:2px}
+.photo{width:100%;aspect-ratio:1.5;border-radius:6px;background:linear-gradient(180deg,#3c6fa5,#1f4f7a 55%,#2f6b2a 56%,#2a5a25);position:relative;overflow:hidden}
+.photo span{position:absolute;bottom:20%;width:7%;height:46%;background:#12264a;border-radius:40% 40% 0 0}
+.photo span::before{content:"";position:absolute;top:-30%;left:20%;width:60%;height:34%;background:#c99a7a;border-radius:50%}
+.tphoto{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-bottom:12px}
+.cap{text-align:center;font-size:9.5px;color:var(--mut);margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{font-weight:600;padding:8px 4px;border-bottom:1px solid var(--line)}
+td{padding:3px 3px}th,td{text-align:center}
+td:first-child{width:32px}td input,td select{padding:6px 7px;font-size:10.5px}td input{text-align:left}
+.cam{width:100%;height:28px;border:1px solid #28483b;background:#0a1512;border-radius:6px;color:var(--tx);display:grid;place-items:center;cursor:pointer}
+.cam svg{width:15px;height:15px}
+.tbl{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#0a1512;padding:0 6px 6px}
+.add{margin:10px 0 14px;border:1.5px solid var(--lime);color:var(--lime);background:none;border-radius:20px;padding:6px 14px;font:inherit;font-weight:600;font-size:12px;cursor:pointer}
+.add:disabled{opacity:.4;cursor:not-allowed}
+.nav2{display:flex;justify-content:space-between;gap:12px}
+.btn{border-radius:22px;padding:9px 22px;font:inherit;font-weight:700;font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn.o{background:none;border:1.5px solid #6a8a7a;color:var(--tx)}
+.btn.p{background:linear-gradient(90deg,#9bf000,#c6ff2b);border:0;color:#06130c;flex:1;max-width:180px;box-shadow:0 0 16px rgba(166,255,0,.35)}
+.btn.p{max-width:none;margin-left:auto;width:60%}
+
+.shieldimg{width:56px;height:56px;object-fit:contain;display:block;margin-bottom:2px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:6px}

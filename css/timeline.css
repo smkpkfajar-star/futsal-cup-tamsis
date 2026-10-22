@@ -1,0 +1,8 @@
+/* timeline + rules */
+.tl{margin:0 0 0 8px;padding:0 0 0 28px;border-left:2px solid var(--line);display:grid;gap:22px}
+.tl li{list-style:none;position:relative}
+.tl li::before{content:"";position:absolute;left:-37px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px rgba(166,255,0,.6)}
+.tl time{color:var(--lime);font-weight:700;font-size:13px}.tl h3{margin:2px 0 4px;font-size:17px}.tl p{margin:0;color:var(--mut)}
+.rules{counter-reset:r;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;padding:0;margin:0}
+.rules li{counter-increment:r;list-style:none;display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:12px;background:var(--card2);padding:14px 16px;line-height:1.45}
+.rules li::before{content:counter(r);flex:none;width:30px;height:30px;border-radius:50%;background:var(--lime);color:#06130c;font-weight:700;display:grid;place-items:center}

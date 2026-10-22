@@ -1,0 +1,6 @@
+/* footer */
+footer{margin-top:16px;border-top:1px solid var(--line);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:11px}
+footer .links{gap:30px;font-size:11px}
+.tag{font-size:9px;letter-spacing:2px;margin-top:6px;color:var(--mut)}
+.soc{display:flex;gap:12px;margin:6px 0}.soc span{width:16px;height:16px;border:1.5px solid #fff;border-radius:4px;display:block}
+.copy{color:var(--mut);font-size:9.5px}
