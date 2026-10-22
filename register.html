@@ -34,7 +34,7 @@
 <div class="wrap">
  <nav>
   <a class="logo" href="index.html"><img class="ball" alt="" src="assets/img/ball.png"><span>JUNIOR HIGH<b>FUTSAL CUP</b></span></a>
-  <div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="rules.html">Rules</a><a href="prizes.html">Prizes</a><a href="faq.html">FAQ</a><a class="on" href="register.html">Register</a></div>
+  <div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="rules.html">Rules</a><a href="prizes.html">Prizes</a><a href="faq.html">FAQ</a><a class="on" href="register.html">Register</a><a class="mlogin" href="#">Login</a></div>
   <button class="login"><svg width="16" height="16"><use href="#user"/></svg>Login</button>
   <button class="burger" type="button" aria-label="Menu" aria-expanded="false"></button>
  </nav>
@@ -43,7 +43,7 @@
   <img class="heroimg" alt="" src="assets/img/hero.jpg">
   <div class="htxt">
    <div class="sub">JUNIOR HIGH SCHOOL</div>
-   <h1 class="big">Futsal <em>Tournament</em><br>Registration</h1>
+   <h1 class="big"><span class="dm">Futsal <em>Tournament</em><br></span>Registration</h1>
    <p>Daftarkan tim kamu sekarang dan jadilah bagian dari kompetisi futsal antar SMP se-Kabupaten/Kota.</p>
   </div>
  </section>
@@ -55,7 +55,7 @@
  </div>
 <div class="grid">
  <!-- Data Tim -->
-  <section class="panel">
+  <section class="panel p-data">
    <div class="ph"><div class="ico"><svg><use href="#clip"/></svg></div><div><h2>Data Tim</h2><small>Lengkapi informasi tim dan sekolah.</small></div></div>
    <div class="sec">
     <h3><svg><use href="#school"/></svg>Informasi Sekolah</h3>
@@ -66,7 +66,7 @@
      <div><label>Provinsi <s>*</s></label><select><option>Pilih provinsi</option><option>DI Yogyakarta</option><option>Jawa Tengah</option></select></div>
     </div>
    </div>
-   <div class="sec" style="margin-bottom:0">
+   <div class="sec team" style="margin-bottom:0">
     <h3><svg><use href="#users"/></svg>Informasi Tim</h3>
     <div class="two f">
      <div><label>Nama Tim <s>*</s></label><input placeholder="Masukkan nama tim"></div>
@@ -79,9 +79,10 @@
      <div><label>No. HP Pembina <s>*</s></label><input placeholder="0812 3456 7890" inputmode="tel"></div>
     </div>
    </div>
-  </section>
+  <div class="nav2 mnav"><button class="btn o js-prev" type="button">←&nbsp; Sebelumnya</button><button class="btn p js-next" type="button">Selanjutnya &nbsp;→</button></div>
+</section>
  <!-- Middle -->
-  <section class="panel">
+  <section class="panel p-players">
    <div class="ph"><div class="ico o"><svg><use href="#cam"/></svg></div><h2 style="font-size:15px">Upload Foto Tim</h2></div>
    <div class="tphoto">
     <label class="up" style="margin:0"><input type="file" accept="image/png,image/jpeg" hidden><svg><use href="#img"/></svg><b>Upload Foto Tim</b>(JPG, PNG - Maks. 5MB)</label>
@@ -93,7 +94,7 @@
     <tbody id="rows"></tbody>
    </table></div>
    <button class="add" id="add" type="button">+&nbsp; Tambah Pemain</button>
-   <div class="nav2"><button class="btn o" type="button">←&nbsp; Sebelumnya</button><button class="btn p" type="button" id="next">Selanjutnya &nbsp;→</button></div>
+   <div class="nav2"><button class="btn o js-prev" type="button">←&nbsp; Sebelumnya</button><button class="btn p js-next" type="button">Selanjutnya &nbsp;→</button></div>
   </section>
  <!-- Info -->
   <aside class="panel info">
@@ -126,5 +127,6 @@
 </div>
 <script src="js/menu.js"></script>
 <script src="js/players.js"></script>
+<script src="js/steps.js"></script>
 </body>
 </html>
